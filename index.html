@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PROJECT: ECHO — UN-ECRA CLASSIFIED DATABASE</title>
+<meta name="description" content="2030년, 멸종위기 동물이 변이한 에코이드와 인간의 갈등을 기록한 UN-ECRA 기밀 데이터베이스.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Share+Tech+Mono&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="boot" aria-hidden="true">
+  <button class="boot-skip" id="bootSkip" type="button">SKIP ▸</button>
+  <div class="boot-box">
+    <img class="boot-emblem" src="images/un-logo.png" alt="">
+    <div class="boot-org">ECOLOGICAL CRISIS RESPONSE AGENCY</div>
+    <div class="boot-title">UN-ECRA<span>CLASSIFIED ARCHIVE · 기밀 문서 보관소</span></div>
+    <div class="boot-term" id="bootLines"></div>
+    <div class="boot-bar"><i id="bootFill"></i></div>
+    <div class="boot-pct"><span>DECRYPTION</span><span id="bootPct">0%</span></div>
+    <div class="boot-warn">WARNING // 본 시스템은 UN-ECRA 기밀 문서 보관소입니다. 허가되지 않은 열람·복제·유출은 국제협약에 따라 처벌될 수 있으며, 모든 접근은 기록됩니다.</div>
+    <div class="boot-stamp" id="bootStamp">ACCESS GRANTED<small>열람 승인</small></div>
+    <div class="boot-disc">창작 세계관 · 실제 국제연합(UN)과 관련이 없습니다</div>
+  </div>
+</div>
+
+<div class="bg-layer"></div>
+<div class="grid-layer"></div>
+<div class="scan"></div>
+
+<header class="topbar">
+  <a class="brand" href="#home">
+    <span class="brand-mark"></span>
+    <span class="brand-text">PROJECT<b>:</b> ECHO</span>
+  </a>
+  <button class="burger" id="burger" aria-label="메뉴">☰</button>
+  <nav id="nav">
+    <a href="#home" data-r="home">HOME</a>
+    <a href="#world" data-r="world">WORLD</a>
+    <a href="#ecra" data-r="ecra,staff">UN-ECRA</a>
+    <a href="#database" data-r="database,echoid">ECHOID DB</a>
+    <a href="#threat" data-r="threat">THREAT INDEX</a>
+    <a href="#map" data-r="map">WORLD MAP</a>
+    <a href="#incidents" data-r="incidents">INCIDENTS</a>
+    <a href="#documents" data-r="documents,doc">DOCUMENTS</a>
+  </nav>
+</header>
+
+<div class="classbar">
+  <span class="blink">●</span> CONFIDENTIAL // UN-ECRA INTERNAL ARCHIVE // ACCESS LEVEL 3
+  <span class="clock" id="clock"></span>
+</div>
+
+<main id="view"></main>
+
+<footer class="footer">
+  <div>PROJECT: ECHO — 가상의 세계관을 바탕으로 한 창작물입니다. 등장하는 기관·사건·인물은 모두 허구이며 실제 국제연합(UN)과 관련이 없습니다.</div>
+  <div class="mono">UN-ECRA CLASSIFIED DATABASE · BUILD 2030.11</div>
+</footer>
+
+<div id="lightbox" class="lightbox" hidden><img alt=""><button aria-label="닫기">✕</button></div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
